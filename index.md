@@ -1,37 +1,10 @@
-## Welcome to GitHub Pages
+## Overview
 
-You can use the [editor on GitHub](https://github.com/SNTSVV/HUDD/edit/gh-pages/index.md) to maintain and preview the content for your website in Markdown files.
+Deep neural networks (DNNs) are increasingly im- portant in safety-critical systems, for example in their perception layer to analyze images. Unfortunately, there is a lack of methods to ensure the functional safety of DNN-based components. The machine learning literature suggests one should trust DNNs demonstrating high accuracy on test sets. In case of low accuracy, DNNs should be retrained using additional inputs similar to the error-inducing ones.
 
-Whenever you commit to this repository, GitHub Pages will run [Jekyll](https://jekyllrb.com/) to rebuild the pages in your site, from the content in your Markdown files.
+We observe three major challenges with existing practices regarding DNNs in safety-critical systems: (1) scenarios that are underrepresented in the test set may lead to serious safety violation risks, but may, however, remain unnoticed; (2) char- acterizing such high-risk scenarios is critical for safety analysis; (3) retraining DNNs to address these risks is poorly supported when causes of violations are difficult to determine.
 
-### Markdown
+To address these problems in the context of DNNs analyzing images, e.g., in the perception layers of cyber-physical systems, we propose HUDD, an approach that automatically supports the identification of root causes for DNN errors. We automatically group error-inducing images whose results are due to common subsets of DNN neurons. HUDD identifies root causes by applying a clustering algorithm to matrices (i.e., heatmaps) capturing the relevance of every DNN neuron on the DNN outcome. 
+Also, HUDD retrains DNNs with images that are automatically selected based on their relatedness to the identified image clusters.
 
-Markdown is a lightweight and easy-to-use syntax for styling your writing. It includes conventions for
-
-```markdown
-Syntax highlighted code block
-
-# Header 1
-## Header 2
-### Header 3
-
-- Bulleted
-- List
-
-1. Numbered
-2. List
-
-**Bold** and _Italic_ and `Code` text
-
-[Link](url) and ![Image](src)
-```
-
-For more details see [GitHub Flavored Markdown](https://guides.github.com/features/mastering-markdown/).
-
-### Jekyll Themes
-
-Your Pages site will use the layout and styles from the Jekyll theme you have selected in your [repository settings](https://github.com/SNTSVV/HUDD/settings). The name of this theme is saved in the Jekyll `_config.yml` configuration file.
-
-### Support or Contact
-
-Having trouble with Pages? Check out our [documentation](https://docs.github.com/categories/github-pages-basics/) or [contact support](https://github.com/contact) and we’ll help you sort it out.
+We have evaluated HUDD with DNNs from the automotive domain. The approach was able to automatically identify all the distinct root causes of DNN errors, thus supporting safety analysis. Also, our retraining approach has shown to be more effective at improving DNN accuracy than existing approaches.
