@@ -9,3 +9,8 @@ We propose a metamorphic testing approach that alleviates the oracle problem in 
 The approach will be presented at IEEE International Conference on Software Testing, Verification and Validation (ICST) 2020. Our replicability package and the toolset are available at https://bit.ly/MT2020.
 
 
+## Replicability package
+
+Our replicability package is available to reviewers at the following URL http://bit.ly/<ID> It will be made public after acceptance.
+  
+Please replace <ID> with the submission ID associated to the paper (TR-<Year>-<Num>)
