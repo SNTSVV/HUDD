@@ -2,7 +2,7 @@
 
 ## Overview 
 
-Deep neural networks (DNNs) are increasingly im- portant in safety-critical systems, for example in their perception layer to analyze images. Unfortunately, there is a lack of methods to ensure the functional safety of DNN-based components. The machine learning literature suggests one should trust DNNs demonstrating high accuracy on test sets. In case of low accuracy, DNNs should be retrained using additional inputs similar to the error-inducing ones.
+Deep neural networks (DNNs) are increasingly important in safety-critical systems, for example in their perception layer to analyze images. Unfortunately, there is a lack of methods to ensure the functional safety of DNN-based components. The machine learning literature suggests one should trust DNNs demonstrating high accuracy on test sets. In case of low accuracy, DNNs should be retrained using additional inputs similar to the error-inducing ones.
 
 We observe three major challenges with existing practices regarding DNNs in safety-critical systems: (1) scenarios that are underrepresented in the test set may lead to serious safety violation risks, but may, however, remain unnoticed; (2) char- acterizing such high-risk scenarios is critical for safety analysis; (3) retraining DNNs to address these risks is poorly supported when causes of violations are difficult to determine.
 
