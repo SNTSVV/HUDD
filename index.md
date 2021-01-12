@@ -13,6 +13,6 @@ We have evaluated HUDD with DNNs from the automotive domain. The approach was ab
 
 ## Replicability package
 
-Our replicability package is available to reviewers at the following URL http://bit.ly/ID It will be made public after acceptance.
+Our replicability package is available to reviewers at the following URL http://bit.ly/\<ID\> It will be made public after acceptance.
   
-Please replace ID with the submission ID associated to the paper (TRel-\<Year\>-Num>)
+Please replace ID with the submission \<ID\> associated to the paper (TRel-\<Year\>-\<Num\>)
