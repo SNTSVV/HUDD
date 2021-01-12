@@ -2,11 +2,13 @@
 
 ## Overview 
 
-Security testing detects vulnerabilities in software systems and verifies that their data and resources are protected from attackers. However, it suffers from the well-known oracle problem, which refers to the challenge, given an input for a system, of distinguishing correct from incorrect behavior. In many situations where potential vulnerabilities are tested, a test oracle may not exist, or it might be impractical due to the many inputs for which specific oracles have to be defined.
+Deep neural networks (DNNs) are increasingly im- portant in safety-critical systems, for example in their perception layer to analyze images. Unfortunately, there is a lack of methods to ensure the functional safety of DNN-based components. The machine learning literature suggests one should trust DNNs demonstrating high accuracy on test sets. In case of low accuracy, DNNs should be retrained using additional inputs similar to the error-inducing ones.
 
-We propose a metamorphic testing approach that alleviates the oracle problem in security testing. It enables engineers to specify a workable number of metamorphic relations that capture security properties of the system and automatically test the system to detect vulnerabilities based on those relations. In addition, we provide a catalog of 22 system-agnostic, metamorphic relations to automate security testing in Web systems. The approach automatically detected 100% and 75% of the targeted vulnerabilities affecting an industrial system and a leading open source system (Jenkins), respectively.
+We observe three major challenges with existing practices regarding DNNs in safety-critical systems: (1) scenarios that are underrepresented in the test set may lead to serious safety violation risks, but may, however, remain unnoticed; (2) char- acterizing such high-risk scenarios is critical for safety analysis; (3) retraining DNNs to address these risks is poorly supported when causes of violations are difficult to determine.
 
-The approach will be presented at IEEE International Conference on Software Testing, Verification and Validation (ICST) 2020. Our replicability package and the toolset are available at https://bit.ly/MT2020.
+To address these problems in the context of DNNs analyzing images, e.g., in the perception layers of cyber-physical systems, we propose HUDD, an approach that automatically supports the identification of root causes for DNN errors. We automatically group error-inducing images whose results are due to common subsets of DNN neurons. HUDD identifies root causes by applying a clustering algorithm to matrices (i.e., heatmaps) capturing the relevance of every DNN neuron on the DNN outcome. Also, HUDD retrains DNNs with images that are automatically selected based on their relatedness to the identified image clusters.
+
+We have evaluated HUDD with DNNs from the automotive domain. The approach was able to automatically identify all the distinct root causes of DNN errors, thus supporting safety analysis. Also, our retraining approach has shown to be more effective at improving DNN accuracy than existing approaches.
 
 
 ## Replicability package
