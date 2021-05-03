@@ -10,9 +10,9 @@ To address these problems in the context of DNNs analyzing images, e.g., in the 
 
 We have evaluated HUDD with DNNs from the automotive domain. The approach was able to automatically identify all the distinct root causes of DNN errors, thus supporting safety analysis. Also, our retraining approach has shown to be more effective at improving DNN accuracy than existing approaches.
 
+A research paper describing HUDD has been accepted for publication on IEEE Transactions on Reliability; it is available for download on ArXiv at [https://arxiv.org/abs/2002.00863](https://arxiv.org/abs/2002.00863).
 
 ## Replicability package
 
-Our replicability package is available to reviewers at the following URL http://bit.ly/\<ID\> It will be made public after acceptance.
-  
-Please replace \<ID\> with the submission ID associated to the paper (TRel-\<Year\>-\<Num\>)
+Our replicability package is available at the following URL [https://dropit.uni.lu/invitations?share=33b702cd7a2b0adf42de](https://dropit.uni.lu/invitations?share=33b702cd7a2b0adf42de).
+
