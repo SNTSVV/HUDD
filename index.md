@@ -13,4 +13,6 @@ We have evaluated HUDD with DNNs from the automotive domain. The approach was ab
 
 ## Replicability package
 
-Our replicability package is available at the following URL https://dropit.uni.lu/invitations?share=33b702cd7a2b0adf42de 
+Our replicability package is available at the following URL 
+
+https://zenodo.org/record/5725116#.YZ5j1FMo_UI
