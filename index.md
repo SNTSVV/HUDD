@@ -11,8 +11,8 @@ To address these problems in the context of DNNs analyzing images, e.g., in the 
 We have evaluated HUDD with DNNs from the automotive domain. The approach was able to automatically identify all the distinct root causes of DNN errors, thus supporting safety analysis. Also, our retraining approach has shown to be more effective at improving DNN accuracy than existing approaches.
 
 
-## Replicability package
+## Replicability package and tool
 
-Our replicability package is available at the following URL 
+Our replicability package and toolset are available at the following URL 
 
 https://zenodo.org/record/5725116#.YZ5j1FMo_UI
