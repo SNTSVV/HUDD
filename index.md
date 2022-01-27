@@ -14,5 +14,5 @@ A research paper describing HUDD has been accepted for publication on IEEE Trans
 
 ## Replicability package
 
-Our replicability package is available at the following URL [https://dropit.uni.lu/invitations?share=33b702cd7a2b0adf42de](https://dropit.uni.lu/invitations?share=33b702cd7a2b0adf42de).
+Our replicability package is available at the following URL [https://zenodo.org/record/5725116](https://zenodo.org/record/5725116).
 
